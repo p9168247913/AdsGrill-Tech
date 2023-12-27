@@ -30,8 +30,6 @@ const register = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(req.body.password, 10)
 
-
-
     const newUser = new User({
       name,
       email,
